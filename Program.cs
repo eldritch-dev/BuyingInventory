@@ -1,14 +1,4 @@
 ﻿Console.WriteLine("Hey there! Welcome to Tortuga's Thrift Shop. I'm Tortuga.");
-Console.WriteLine("What's your name?");
-
-var name = Console.ReadLine();
-
-double discount = name switch
-{
-    "Javier" => 0.5,
-    _ => 1
-};
-
 Console.WriteLine("The following items are available:");
 Console.WriteLine("1 - Rope");
 Console.WriteLine("2 - Torches");
@@ -20,6 +10,16 @@ Console.WriteLine("7 - Food Supplies");
 Console.WriteLine("What number do you want to see the price of?");
 
 var choice = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("What's your name?");
+
+var name = Console.ReadLine();
+
+double discount = name switch
+{
+    "Javier" => 0.5,
+    _ => 1
+};
 
 string answer = choice switch
 {
